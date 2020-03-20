@@ -104,6 +104,7 @@ function App() {
   return (
     <React.Fragment>
       {buildTable()}
+      <h6>Copyright - Jusung Chai</h6>
     </React.Fragment>
   );
 }
