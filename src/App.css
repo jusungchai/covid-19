@@ -7,6 +7,29 @@
   pointer-events: none;
 }
 
+#copyright {
+  text-align: center;
+}
+
+.MuiTypography-root.MuiTypography-h6 {
+  white-space: normal !important;
+  text-align: center;
+  font-weight: bold;
+}
+
+.MuiToolbar-root.MuiToolbar-regular.MTableToolbar-root-33.MuiToolbar-gutters {
+  background-color: red;
+}
+
+.MuiTableBody-root > :nth-of-type(even) {
+  background-color: rgb(167, 176, 185);
+}
+
+.MuiTableCell-root.MuiTableCell-head.MTableHeader-header-153.MuiTableCell-alignLeft {
+  background-color: black;
+  color: white;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

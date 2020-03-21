@@ -92,7 +92,7 @@ function App() {
         <MaterialTable
           icons={tableIcons}
           title={`COVID-19 Global Stats Summary Ending ${getDate()}`}
-          options={{ sorting: false, draggable: false }}
+          options={{ sorting: false, draggable: false, pageSize: 20, pageSizeOptions: [] }}
           columns={createColumn()}
           data={createData()}
         />
@@ -104,7 +104,7 @@ function App() {
   return (
     <React.Fragment>
       {buildTable()}
-      <h6>Copyright - Jusung Chai</h6>
+      <h6 id='copyright'>Copyright - Jay Jusung Chai</h6>
     </React.Fragment>
   );
 }
