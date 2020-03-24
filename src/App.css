@@ -8,7 +8,15 @@
   font-weight: bold;
 }
 
-.MuiTableBody-root > :nth-of-type(odd) {
+tbody.MuiTableBody-root > * > :nth-child(3) { 
+  color: red !important
+}
+
+tbody.MuiTableBody-root > * > :nth-child(5) { 
+  color: red !important
+}
+
+tbody.MuiTableBody-root > :nth-of-type(odd) {
   background-color: rgb(167, 176, 185);
 }
 
@@ -20,3 +28,4 @@
 #table > :first-child > :first-child{
   background-color: red;
 }
+
