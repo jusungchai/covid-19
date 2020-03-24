@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import axios from 'axios';
 import Papa from 'papaparse';
