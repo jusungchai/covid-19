@@ -3,19 +3,8 @@ import './App.css';
 import axios from 'axios';
 import Papa from 'papaparse';
 import MaterialTable from 'material-table'
-import { Clear, FirstPage, LastPage, ChevronRight, ChevronLeft, Search } from "@material-ui/icons"
 
 function App() {
-
-  const tableIcons = {
-    Clear: forwardRef((props, ref) => <Clear {...props} ref={ref} />),
-    FirstPage: forwardRef((props, ref) => <FirstPage {...props} ref={ref} />),
-    LastPage: forwardRef((props, ref) => <LastPage {...props} ref={ref} />),
-    NextPage: forwardRef((props, ref) => <ChevronRight {...props} ref={ref} />),
-    PreviousPage: forwardRef((props, ref) => <ChevronLeft {...props} ref={ref} />),
-    ResetSearch: forwardRef((props, ref) => <Clear {...props} ref={ref} />),
-    Search: forwardRef((props, ref) => <Search {...props} ref={ref} />)
-  };
 
   const [data, setData] = useState({
     confirmed: null,
@@ -115,9 +104,8 @@ function App() {
     if (data) {
       return (
         <MaterialTable
-          icons={tableIcons}
           title={`COVID-19 Global Stats Summary Ending ${data.latestDate}`}
-          options={{ sorting: false, draggable: false, pageSize: 20, pageSizeOptions: [] }}
+          options={{ sorting: true, draggable: false, pageSize: 20, pageSizeOptions: [] }}
           columns={createColumn()}
           data={createData()}
         />
