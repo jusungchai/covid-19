@@ -99,16 +99,18 @@ function App() {
     dataArray.sort((a, b) => b.confirmedLatest - a.confirmedLatest)
     return dataArray;
   }
-  
+
   const buildTable = () => {
     if (data) {
       return (
-        <MaterialTable
-          title={`COVID-19 Global Stats Summary Ending ${data.latestDate}`}
-          options={{ sorting: true, draggable: false, pageSize: 20, pageSizeOptions: [] }}
-          columns={createColumn()}
-          data={createData()}
-        />
+        <div id='table'>
+          <MaterialTable
+            title={`COVID-19 Global Stats Summary Ending ${data.latestDate}`}
+            options={{ sorting: true, draggable: false, pageSize: 20, pageSizeOptions: [] }}
+            columns={createColumn()}
+            data={createData()}
+          />
+        </div>
       );
     }
     return null;
