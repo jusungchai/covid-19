@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+div > table.MuiTable-root {
+  table-layout: fixed !important;
+}
+
 .MuiTypography-root.MuiTypography-h6 {
   white-space: normal !important;
   text-align: center;
@@ -29,3 +33,12 @@ tbody.MuiTableBody-root > :nth-of-type(odd) {
   background-color: red;
 }
 
+@media only screen and (max-width: 400px) {
+  tbody.MuiTableBody-root > tr.MuiTableRow-root > :first-child {
+    word-break: break-word;
+  }
+
+  thead.MuiTableHead-root > :first-child > *{    
+    font-size: 10px;
+  }
+}

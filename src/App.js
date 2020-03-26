@@ -106,7 +106,7 @@ function App() {
         <div id='table'>
           <MaterialTable
             title={`COVID-19 Global Stats Summary Ending ${data.latestDate}`}
-            options={{ sorting: true, draggable: false, pageSize: 20, pageSizeOptions: [] }}
+            options={{ sorting: false, draggable: false, pageSize: 20, pageSizeOptions: [] }}
             columns={createColumn()}
             data={createData()}
           />
